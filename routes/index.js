@@ -5,7 +5,7 @@ const Url = require('../models/Url');
 
 // @route   GET/:code
 // @desc    Redirect to the original URL
-router.get(':/code', async (req,res) => {
+router.get('/:code', async (req,res) => {
     try {
         const url = await Url.findOne({urlCode: req.params.code}).exec();
 

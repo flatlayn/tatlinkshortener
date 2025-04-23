@@ -6,14 +6,12 @@ const app = express();
 // Connect to database
 connectDB();
 
-app.use(express.json({extented: false}));
+app.use(express.json());
 
-// Define routes
-app.use('/',require('./routes/index'));
+// Define Routes
+app.use('/', require('./routes/index'));
 app.use('/api/url', require('./routes/url'));
 
+const PORT = 3000;
 
-const PORT = 1010;
-
-app.listen(PORT, () => console.log(`Server running on ${PORT}`));
-
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
