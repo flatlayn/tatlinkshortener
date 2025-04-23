@@ -10,8 +10,6 @@ Directs all traffic from their domain to the respective distributor.
 * Config
 * Express
 * Mongoose
-* Valid-Url
-
 
 ### Developed by: Rai Stephen Isidro
 
